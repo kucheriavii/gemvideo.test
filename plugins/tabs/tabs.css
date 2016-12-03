@@ -1,0 +1,72 @@
+.tabs{
+    display:inline-block;
+}
+.tabs > div{
+    padding-top:15px;
+}
+.tabs ul{
+    margin:0px;
+    padding:0px;
+}
+.tabs ul:after{
+    content:"";
+    display:none;
+    clear:both;
+    height:3px;
+    background: #0074D9;
+    margin: 0 -.5rem;
+}
+.tabs ul li{
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    display:inline-block;
+    background:#fff;
+    color:#888;
+    font-size: 14px;
+    vertical-align: bottom;
+}
+
+.tabs ul li.active, .tabs ul li.active:hover{
+    background:#000;
+    color:#fff;
+}
+.tabs ul li:hover{
+    background:#d6d6d7;
+}
+
+.right-block-tabs ul {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eee;
+}
+
+.right-block-tabs ul li {
+	padding: 2px 6px;
+	color: #222;
+	font-size: 11px;
+	margin-right: 10px;
+}
+	
+	.right-block-tabs ul li.active, .right-block-tabs ul li.active:hover {
+		color: #fff;
+		background: #21498a;
+	}
+	
+.recommend-tabs ul {
+	padding-bottom: 0px;
+}
+
+	.recommend-tabs ul li {
+		padding: 2px 20px;
+		color: #222;
+		margin: 0 3px;	
+		font-size: 11px;
+	}
+		
+		.recommend-tabs ul li.active, .recommend-tabs ul li.active:hover {
+			color: #fff;
+			background: #21498a;
+		}	
+	
+
+

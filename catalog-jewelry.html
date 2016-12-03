@@ -1,0 +1,931 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GemVideo</title>
+	<!--[if IE]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+	<!-- document stylesheet files -->
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="css/styles.css" rel="stylesheet" media="screen">
+	<link href="css/safin-styles.css" rel="stylesheet" media="screen">
+	<!--[if gte IE 9]>
+	<link rel="stylesheet" href="css/ie9.css" media="screen, projection">
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/ie8.css" media="screen, projection">
+	<![endif]-->
+	<!--[if lte IE 7]>
+	<link rel="stylesheet" href="css/ie7.css" media="screen, projection">
+	<![endif]-->
+	<link href="plugins/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
+	<link href="plugins/animate/animate.css" rel="stylesheet" media="screen">
+	<link href="plugins/fancybox/jquery.fancybox.css" rel="stylesheet" media="screen">
+	<link href="plugins/datetimepicker/jquery.datetimepicker.css" rel="stylesheet" media="screen">
+
+	<link rel="stylesheet" href="plugins/slick-menu/dist/slicknav.css" />
+	<link href="plugins/formstyler/jquery.formstyler.css" rel="stylesheet" media="screen">
+	<link href="plugins/rangeslider/nouislider.css" rel="stylesheet" media="screen">
+	<link type="text/css" href="plugins/jui/css/main.css" rel="stylesheet" media="all" />
+	<!-- FONT  -->
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="fonts/Lato/lato.css" rel="stylesheet" media="screen">
+
+	<!-- FONT -->
+
+</head>
+
+<body class="overflow-hidden-x">
+
+	<header>
+		<div class="gray-header">
+			<div class="global-box">
+				<div class="col-md-6">
+					<a href="" class="mini-gemvideo">
+						<img src="img/mini-gemvideo.png" alt="" />
+					</a>
+					<a href="" class="mini-grandexchange">
+						<img src="img/mini-grandexchange.png" alt="" />
+					</a>
+					<div class="link lh-n va-top">
+						<a href="" class="display-block fs-minima text-underline">GEMLAB</a>
+						<span class="fs-micro ff-lat gray-text">Геммологическая лаборотория</span>
+					</div>
+				</div>
+				<div class="col-md-6 text-right">
+					<div class="langs">
+						<a href="/lang?lang=en_US">
+							<img src="img/lang_en_US.png" alt="en_US"></a>
+						<a href="/lang?lang=ch">
+							<img src="img/lang_ch.png" alt="ch"></a>
+						<a href="/lang?lang=ru_RU">
+							<img src="img/lang_ru_RU.png" alt="ru_RU"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="global-box">
+			<div class="clearfix">
+				<div class="col-md-2">
+					<a href="">
+						<img src="img/gemvideo-logo.png" class="gemvideo-logo"/>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<p class="ff-lat mt-35 mb-35 gray-text fs-micro">
+						Независимая технологическая
+						<br />
+						лаборотория
+					</p>
+				</div>
+				<div class="col-md-5">
+					<form class="mt-35">
+						<input type="text" class="text w270 va-top mr-5" placeholder="Введите № сертификата"/>
+						<input type="submit" class="button blue small va-top white-text text-center pdn-m mw-130" value="Проверить" />
+					</form>
+				</div>
+				<div class="col-md-2 text-right">
+					<a href="" class="link-button key blue-text mt-40">ВОЙТИ В КАБИНеТ</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="top-nav">
+			<div class="global-box">
+				<div class="col-md-12">
+					<ul class="top-nav-ul">
+						<li>
+							<a href="/about">о нас</a>
+						</li>
+						<li>
+							<a href="/services">Услуги</a>
+						</li>
+						<li>
+							<a href="/how-it-works">Как это работает</a>
+						</li>
+						<li>
+							<a href="/gallery">Галерея</a>
+						</li>
+						<li>
+							<a href="/glossary">Глоссарий</a>
+						</li>
+						<li>
+							<a href="/faq">FAQ</a>
+						</li>
+						<li>
+							<a href="/contact">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="">
+		<div class="global-box">
+			<div class="clearfix">
+				<div class="col-md-3 mt-40">
+					<div class="sidebar-menu-item mb-15">
+						<a href="" class="toggle-menu-btn bg-gray lh-30 fs-small plr-30 text-uppercase blue-text w100p display-block  lh-n cursor-pointer">Личные данные</a>
+					</div>
+
+					<div class="sidebar-menu-item mb-15">
+						<span class="toggle-menu-btn bg-gray lh-30 fs-small plr-30 text-uppercase blue-text w100p display-block  lh-n cursor-pointer">
+							GEMVIDEO
+							<span class="toggle-menu-arrow"></span>
+						</span>
+						<div class="toggle-menu-block">
+							<a href="" class="text-uppercase display-block pl-30 blue-text ff-lat fs-small mt-10 lh-1-4">МОИ ОБъекты</a>
+
+							<a href="" class="pl-30 display-block blue-text ff-lat fs-small mt-10 lh-1-4 position-relative">
+								Ограненные камни
+								<span class="gray-number fs-small text-bold ff-lat">22</span>
+							</a>
+							<a href="" class="pl-40 display-block blue-text ff-lat fs-small lh-1-4 position-relative">
+								Пары
+								<span class="gray-number fs-small text-bold ff-lat">19</span>
+							</a>
+							<a href="" class="pl-40 display-block blue-text ff-lat fs-small lh-1-4 position-relative">
+								Лоты
+								<span class="gray-number fs-small text-bold ff-lat">3</span>
+							</a>
+
+							<a href="" class="pl-30 display-block blue-text ff-lat fs-small mt-10 lh-1-4 position-relative">
+								Ювелирные изделия
+								<span class="gray-number fs-small text-bold ff-lat">22</span>
+							</a>
+							<div class="pl-40 display-block blue-text ff-lat fs-small lh-1-4 position-relative">
+								Комплекты
+								<span class="gray-number fs-small text-bold ff-lat">19</span>
+							</div>
+							<div class="pl-40 display-block blue-text ff-lat fs-small lh-1-4 position-relative">
+								Лоты
+								<span class="gray-number fs-small text-bold ff-lat">3</span>
+							</div>
+
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small mt-10 bor-top-lray lh-40">мои заказы</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-40">мои контакты</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-40">мои отправленные ссылки</a>
+
+							<div class="text-uppercase plr-30 display-block blue-text ff-lat fs-small ptb-10 bor-top-lray lh-40">
+								<a href="" class="button blue white-text w100per fs-small text-center small">создать заказ</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar-menu-item mb-15">
+						<span class="toggle-menu-btn bg-gray lh-30 fs-small plr-30 text-uppercase blue-text w100p display-block   lh-n cursor-pointer">
+							покупатель
+							<span class="toggle-menu-arrow"></span>
+						</span>
+						<div class="toggle-menu-block">
+							<a href="" class="text-uppercase display-block pl-30 blue-text ff-lat fs-small mt-10 lh-1-4">каталог grandexchange</a>
+
+							<a href="" class="pl-30 display-block blue-text ff-lat fs-small mt-10 lh-1-4 position-relative">Ограненные камни</a>
+							<a href="" class="pl-40 display-block blue-text ff-lat fs-small lh-1-4 position-relative">Пары</a>
+							<a href="" class="pl-40 display-block blue-text ff-lat fs-small lh-1-4 position-relative">Лоты</a>
+
+							<a href="" class="pl-30 display-block blue-text ff-lat fs-small mt-10 lh-1-4 position-relative">Ювелирные изделия</a>
+							<div class="pl-40 display-block blue-text ff-lat fs-small lh-1-4 position-relative">Лоты</div>
+
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small mt-10 bor-top-lray lh-1-4 ptb-10 position-relative">
+								корзина
+								<span class="gray-number-large fs-small text-bold ff-lat">3</span>
+							</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-1-4 ptb-10 position-relative">
+								отложенные товары
+								<span class="gray-number-large fs-small text-bold ff-lat">3</span>
+							</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small bor-top-lray lh-1-4 ptb-10 ">
+								отправленные
+								<br />
+								запросы
+							</a>
+							<a href="" class="pl-30 display-block blue-text ff-lat fs-small lh-1-4 position-relative">
+								Заказы к оплате
+								<span class="gray-number fs-small text-bold ff-lat">22</span>
+							</a>
+							<a href="" class="pl-30 display-block blue-text ff-lat fs-small lh-1-4 position-relative">
+								Предложение продавцу
+								<span class="gray-number fs-small text-bold ff-lat">22</span>
+							</a>
+							<a href="" class="pl-30 display-block blue-text ff-lat fs-small lh-1-4 position-relative">
+								Камни на заказ
+								<span class="gray-number fs-small text-bold ff-lat">22</span>
+							</a>
+							<a href="" class="pl-30 display-block blue-text ff-lat fs-small lh-1-4 position-relative">
+								Возвраты
+								<span class="gray-number fs-small text-bold ff-lat">22</span>
+							</a>
+
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small mt-10 bor-top-lray lh-1-4 ptb-10 position-relative">
+								история заказов
+								<span class="gray-number-large fs-small text-bold ff-lat">3</span>
+							</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-1-4 ptb-10 position-relative">история платежей</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-1-4 ptb-10 position-relative">
+								сообщения
+								<span class="gray-number-large fs-small text-bold ff-lat">3</span>
+							</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-1-4 ptb-10 position-relative">возврат камней</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-1-4 ptb-10 position-relative">шаблоны поиска</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-1-4 ptb-10 position-relative">рассылка</a>
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-1-4 ptb-10 position-relative">данные доставки</a>
+						</div>
+					</div>
+
+					<div class="sidebar-menu-item mb-15">
+						<span class="toggle-menu-btn bg-gray lh-30 fs-small plr-30 text-uppercase blue-text w100p display-block   lh-n cursor-pointer">
+							продавец
+							<span class="toggle-menu-arrow"></span>
+						</span>
+						<div class="toggle-menu-block">
+							<a href="" class="text-uppercase pl-30 display-block blue-text ff-lat fs-small  bor-top-lray lh-1-4 ptb-10 position-relative">отправить запрос</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 mt-40">
+
+					<div class="clearfix">
+						<div class="clearfix">
+							<div class="filtr-title small pdn button blue no-bg fs-small float-left">
+								<span class="show ">Скрыть фильтры</span>
+								<span class="hide">Показать фильтры</span>
+							</div>
+
+							<div class="float-right">
+								<a href="" class="text-uppercase text-underline display-block blue-text ff-lat fs-small  lh-30">сбросить фильтр</a>
+							</div>
+						</div>
+
+						<div class="filtr-content mt-20">
+							
+							<div class="clearfix bor-top-lray pt-10 mt-10 bor-btm-bold-black pb-40">
+													
+								<!--- COLOR ---->
+								 
+								
+								<div class="tbm-jewelry-color mt-10 bor-btm-lray">
+									<label>
+										<input type="radio" name="tbm-jewelry-color" checked="">
+										<div class="tbm-jewelry-color-box">
+											<div class="">
+												<img src="pic/j_type1.jpg"/>
+											</div>
+											<span>Кольцо</span>
+										</div>
+									</label>
+									
+									<label>
+										<input type="radio" name="tbm-jewelry-color" checked="">
+										<div class="tbm-jewelry-color-box">
+											<div class="">
+												<img src="pic/j_type2.jpg"/>
+											</div>
+											<span>Серьги</span>
+										</div>
+									</label>
+									
+									<label>
+										<input type="radio" name="tbm-jewelry-color" checked="">
+										<div class="tbm-jewelry-color-box">
+											<div class="">
+												<img src="pic/j_type3.jpg"/>
+											</div>
+											<span>Браслет</span>
+										</div>
+									</label>
+									
+									<label>
+										<input type="radio" name="tbm-jewelry-color" checked="">
+										<div class="tbm-jewelry-color-box">
+											<div class="">
+												<img src="pic/j_type4.jpg"/>
+											</div>
+											<span>Брошь</span>
+										</div>
+									</label>
+									
+									<label>
+										<input type="radio" name="tbm-jewelry-color" checked="">
+										<div class="tbm-jewelry-color-box">
+											<div class="">
+												<img src="pic/j_type5.jpg"/>
+											</div>
+											<span>Ожерелье</span>
+										</div>
+									</label>
+									
+									<label>
+										<input type="radio" name="tbm-jewelry-color" checked="">
+										<div class="tbm-jewelry-color-box">
+											<div class="">
+												<img src="pic/j_type6.jpg"/>
+											</div>
+											<span>Кулон</span>
+										</div>
+									</label>
+									
+								 
+									 
+								</div>
+								
+								<!--- OGRANKA --->
+								
+								
+								<div id="tbm-jewelry-tabs" class="mt-35 ">
+								    <ul class="tabs-menu-jewelry">
+								        <li class="current"><a href="#jew-1">ОПРАВА</a></li>
+								        <li><a href="#jew-2">ОСНОВНЫЕ КАМНИ</a></li>
+								   </ul>
+								    <div class="tbm-tab-mini jewelry">
+								        <div id="jew-1" class="tab-content">
+								        	
+								        	<div class="clearfix">
+								        		<div class="col-md-12 p-0 mt-20">
+								        			<div class="lh-20 ff-lat fs-small">Стоимость</div>
+								        		</div>
+								        		
+								        		<div class="col-md-6 pl-0">
+								        			<div class="mt-30">
+											        	<div class="sliderCont">
+															<div id="TotalPrice"></div>
+														</div>
+				
+														<div class="formCost">
+				
+															<input type="text" id="minTotalPrice" class="minValueTbm" value="0"/>
+															<label for="minTotalPrice">$</label>
+				
+															<input type="text" id="maxTotalPrice" class="maxValueTbm" value="1000"/>
+															<label for="maxTotalPrice">$</label>
+														</div>
+													</div>	
+								        		</div>
+								        		
+								        		<div class="col-md-6 pr-0">
+								        			<label for="" class="fs-small ff-lat pl-10 mt-20">
+														<input type="checkbox" name="" id="" class="checkbox" />
+														Сертификат оценки стоимости
+													</label>
+								        		</div>
+								        		
+								        	</div>
+								        	
+								        	
+								        	<div class="clearfix mt-20">
+								        		<div class="col-md-6 pl-0">
+													<div class="col-md-12 p-0">
+														<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">	Тип изделия</label>
+														<select name="" id="" class="selectbox">
+															<option value="">Выбрать</option>
+														</select>
+													</div>
+			
+													 
+												</div>
+												
+												<div class="col-md-6 pr-0">
+													<div class="col-md-12 p-0">
+														<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10"> Металл</label>
+														<select name="" id="" class="selectbox">
+															<option value="">Выбрать</option>
+														</select>
+													</div>
+			
+													 
+												</div>
+								        	</div>
+								        	
+								        </div>
+								        <div id="jew-2" class="tab-content">
+								        	v
+								        </div>
+								       
+								        
+								    </div>
+								</div>
+							 
+							</div>
+							 
+						<!--
+		
+							<div class="mt-35 row filtr-block pb-40">
+
+								<div class="clearfix">
+									<div class="col-md-3">
+										<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">Тип камня</label>
+										<select name="" id="" class="selectbox">
+											<option value="">Выбрать</option>
+										</select>
+									</div>
+
+									<div class="col-md-3">
+										<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">Статус заказа</label>
+										<select name="" id="" class="selectbox">
+											<option value="">Выбрать</option>
+										</select>
+									</div>
+
+									<div class="col-md-3">
+										<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">Дата создания</label>
+										<div class="position-relative">
+											<input type="text" id="datetimepicker1" class="tbm-datepicker"/>
+											<span class="cal-ico"></span>
+										</div>
+
+										<div class="line-ss"></div>
+
+									</div>
+
+									<div class="col-md-3">
+										<label class="puts display-block lh-30 black-text ff-lat fs-small mt-10 mb-10"></label>
+										<div class="position-relative">
+											<input type="text" id="datetimepicker2" class="tbm-datepicker"/>
+											<span class="cal-ico"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="clearfix mt-20">
+
+									<div class="col-md-6">
+										<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">СТОИМОСТЬ</label>
+										<div class="sliderCont">
+											<div id="slider"></div>
+										</div>
+
+										<div class="formCost">
+
+											<input type="text" id="minCost" value="0"/>
+											<label for="minCost">$</label>
+
+											<input type="text" id="maxCost" value="1000"/>
+											<label for="maxCost">$</label>
+										</div>
+
+									</div>
+
+									<div class="col-md-6">
+										<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">ВЕС</label>
+										<div class="sliderCont">
+											<div id="slider2"></div>
+										</div>
+
+										<div class="formCost">
+
+											<input class="text" type="text" id="minCost2" value="0"/>
+											<label for="minCost2">$</label>
+
+											<input class="text" type="text" id="maxCost2" value="1000"/>
+											<label for="maxCost2">$</label>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="clearfix mt-20">
+
+									<div class="col-md-3">
+										<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">Облагораживание</label>
+										<select name="" id="" class="selectbox">
+											<option value="">Выбрать</option>
+										</select>
+									</div>
+
+									<div class="col-md-3">
+										<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">Огранка</label>
+										<select name="" id="" class="selectbox">
+											<option value="">Выбрать</option>
+										</select>
+									</div>
+
+									<div class="clearfix gr-line-fx"></div>
+
+									<div class="col-md-12">
+										<label class="display-block lh-30 black-text ff-lat fs-small mt-30 mb-10">ДОПОЛНИТЕЛЬНО</label>
+									</div>
+
+									<div class="clearfix"></div>
+
+									<div class="row">
+										<div class="col-md-5">
+											<div class="col-md-12">
+												<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">Месторождение</label>
+												<select name="" id="" class="selectbox">
+													<option value="">Выбрать</option>
+												</select>
+											</div>
+
+											<div class="col-md-12">
+												<label class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10">Страна происхождения</label>
+												<select name="" id="" class="selectbox">
+													<option value="">Выбрать</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-7">
+											<div class="clearfix"></div>
+											<div class="display-block lh-30 black-text ff-lat fs-small mt-10 mb-10 float-left pr-30">Сертификат</div>
+											<div class="radio-group pb-10 mt-5 float-left">
+												<label class="display-block clearfix  mt-10 float-left">
+													<div class="col-md-12 pl-0 fs-small ff-lat black-text lh-n">
+														<input type="radio" class="radio"/>
+														Нет
+													</div>
+												</label>
+												<label class="display-block clearfix  mt-10 float-left">
+													<div class="col-md-12 pl-0 fs-small ff-lat black-text lh-n">
+														<input type="radio" class="radio"/>
+														Есть
+													</div>
+												</label>
+											</div>
+
+											<div class="ff-lat fs-small black-text lh-30 mb-5 mt-30 clear-both">
+
+												<label for="" class="fs-small ff-lat pl-10 ">
+													<input type="checkbox" name="" id="" class="checkbox" />
+													GIA
+												</label>
+
+												<label for="" class="fs-small ff-lat pl-10 ">
+													<input type="checkbox" name="" id="" class="checkbox" />
+													EGL
+												</label>
+
+												<label for="" class="fs-small ff-lat pl-10 ">
+													<input type="checkbox" name="" id="" class="checkbox" />
+													IGL
+												</label>
+
+												<label for="" class="fs-small ff-lat pl-10 ">
+													<input type="checkbox" name="" id="" class="checkbox" />
+													HDR
+												</label>
+
+												<label for="" class="fs-small ff-lat pl-10 ">
+													<input type="checkbox" name="" id="" class="checkbox" />
+													Другой
+												</label>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+	
+						-->
+							 
+							<div class="clearfix">
+
+								<div class="col-md-12 mt-40 p-0">
+
+									<div class="clearfix mt-30">
+										<div class="col-md-6 fs-megabig p-0 lh-30 black-text ff-lat float-left">В продаже: 23 объекта</div>
+
+										<a href="" class="link-button key blue-text mt-10 float-right">Экспортировать в csv</a>
+
+									</div>
+
+									<div class="table-sort-buttons mt-30">
+										<span>Сортировать по:</span>
+										<ul>
+											<li>
+												<a href="" class="active">Дате</a>
+											</li>
+
+											<li>
+												<a href="">Цене</a>
+											</li>
+											<li>
+												<a href="">Каратному весу</a>
+											</li>
+											<li>
+												<a href="">Форме огранки</a>
+											</li>
+											<li>
+												<a href="">Чистоте</a>
+											</li>
+											<li>
+												<a href="">Цвету</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="pagination-block no-border">
+										<a href="" class="pag-prev"></a>
+										<a href="" class="pag-prev-2"></a>
+
+										<ul class="pag-numbers">
+											<li>
+												<a href="">1</a>
+											</li>
+											<li>
+												<a href="">2</a>
+											</li>
+											<li>
+												<a href="">3</a>
+											</li>
+											<li>
+												<a href="">4</a>
+											</li>
+											<li>
+												<a href="">5</a>
+											</li>
+										</ul>
+
+										<a href="" class="pag-next"></a>
+										<a href="" class="pag-next-2"></a>
+									</div>
+
+									<table class="table-list mt-20 nsv-table">
+										<thead>
+											<tr>
+												<td>№ заказа</td>
+												<td>Фото</td>
+												<td>Тип камня</td>
+												<td>Форма</td>
+												<td>Вес, ct</td>
+												<td>Цвет</td>
+												<td>Чистота</td>
+												<td>Огранка</td>
+												<td>Сертификат</td>
+												<td>Зарезервирован</td>
+												<td>Предложения</td>
+												<td>Стоимость</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>344654</td>
+												<td>
+													<img src="img/video-pic-1.png"/>
+												</td>
+												<td>Бриллиант</td>
+												<td>
+													<img src="img/video-pic-1.png" alt="" />
+												</td>
+												<td>10.36</td>
+												<td>E (2)</td>
+												<td>VS1 (5)</td>
+												<td>VS1 (5)</td>
+												<td>
+													<a href="">GIA</a>
+												</td>
+												<td>
+													<div class="fs-micro">до 12-09-15 13:45</div>
+													<div class="fs-mini">для заказа</div>
+													<a href="">87345</a>
+												</td>
+												<td>
+													<a href="">34</a>
+												</td>
+												<td class="text-center">
+													<div class="mb-5">$ 2 106.00</div>
+													<a href="" class="ml-20 link-button pencil blue-text mr-15"></a>
+													<a href="" class="link-button trash blue-text"></a>
+												</td>
+											</tr>
+
+											<tr>
+												<td>344654</td>
+												<td>
+													<img src="img/video-pic-1.png"/>
+												</td>
+												<td>Бриллиант</td>
+												<td>
+													<img src="img/video-pic-1.png" alt="" />
+												</td>
+												<td>10.36</td>
+												<td>E (2)</td>
+												<td>VS1 (5)</td>
+												<td>VS1 (5)</td>
+												<td>
+													<a href="">GIA</a>
+												</td>
+												<td>
+													<div class="fs-micro">до 12-09-15 13:45</div>
+													<div class="fs-mini">для заказа</div>
+													<a href="">87345</a>
+												</td>
+												<td>
+													<a href="">34</a>
+												</td>
+												<td class="text-center">
+													<div class="mb-5">$ 2 106.00</div>
+													<a href="" class="ml-20 link-button pencil blue-text mr-15"></a>
+													<a href="" class="link-button trash blue-text"></a>
+												</td>
+											</tr>
+
+											<tr>
+												<td>344654</td>
+												<td>
+													<img src="img/video-pic-1.png"/>
+												</td>
+												<td>Бриллиант</td>
+												<td>
+													<img src="img/video-pic-1.png" alt="" />
+												</td>
+												<td>10.36</td>
+												<td>E (2)</td>
+												<td>VS1 (5)</td>
+												<td>VS1 (5)</td>
+												<td>
+													<a href="">GIA</a>
+												</td>
+												<td>
+													<div class="fs-micro">до 12-09-15 13:45</div>
+													<div class="fs-mini">для заказа</div>
+													<a href="">87345</a>
+												</td>
+												<td>
+													<a href="">34</a>
+												</td>
+												<td class="text-center">
+													<div class="mb-5">$ 2 106.00</div>
+													<a href="" class="ml-20 link-button pencil blue-text mr-15"></a>
+													<a href="" class="link-button trash blue-text"></a>
+												</td>
+											</tr>
+
+											<tr>
+												<td>344654</td>
+												<td>
+													<img src="img/video-pic-1.png"/>
+												</td>
+												<td>Бриллиант</td>
+												<td>
+													<img src="img/video-pic-1.png" alt="" />
+												</td>
+												<td>10.36</td>
+												<td>E (2)</td>
+												<td>VS1 (5)</td>
+												<td>VS1 (5)</td>
+												<td>
+													<a href="">GIA</a>
+												</td>
+												<td>
+													<div class="fs-micro">до 12-09-15 13:45</div>
+													<div class="fs-mini">для заказа</div>
+													<a href="">87345</a>
+												</td>
+												<td>
+													<a href="">34</a>
+												</td>
+												<td class="text-center">
+													<div class="mb-5">$ 2 106.00</div>
+													<a href="" class="ml-20 link-button pencil blue-text mr-15"></a>
+													<a href="" class="link-button trash blue-text"></a>
+												</td>
+											</tr>
+
+											<tr>
+												<td>344654</td>
+												<td>
+													<img src="img/video-pic-1.png"/>
+												</td>
+												<td>Бриллиант</td>
+												<td>
+													<img src="img/video-pic-1.png" alt="" />
+												</td>
+												<td>10.36</td>
+												<td>E (2)</td>
+												<td>VS1 (5)</td>
+												<td>VS1 (5)</td>
+												<td>
+													<a href="">GIA</a>
+												</td>
+												<td>
+													<div class="fs-micro">до 12-09-15 13:45</div>
+													<div class="fs-mini">для заказа</div>
+													<a href="">87345</a>
+												</td>
+												<td>
+													<a href="">34</a>
+												</td>
+												<td class="text-center">
+													<div class="mb-5">$ 2 106.00</div>
+													<a href="" class="ml-20 link-button pencil blue-text mr-15"></a>
+													<a href="" class="link-button trash blue-text"></a>
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+
+									<div class="pagination-block">
+										<a href="" class="pag-prev"></a>
+										<a href="" class="pag-prev-2"></a>
+
+										<ul class="pag-numbers">
+											<li>
+												<a href="">1</a>
+											</li>
+											<li>
+												<a href="">2</a>
+											</li>
+											<li>
+												<a href="">3</a>
+											</li>
+											<li>
+												<a href="">4</a>
+											</li>
+											<li>
+												<a href="">5</a>
+											</li>
+										</ul>
+
+										<a href="" class="pag-next"></a>
+										<a href="" class="pag-next-2"></a>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-dray">
+		<div class="foot-nav">
+			<div class="global-box">
+				<div class="col-md-12">
+					<ul class="foot-nav-ul">
+						<li>
+							<a href="/about">о нас</a>
+						</li>
+						<li>
+							<a href="/services">Услуги</a>
+						</li>
+						<li>
+							<a href="/how-it-works">Как это работает</a>
+						</li>
+						<li>
+							<a href="/gallery">Галерея</a>
+						</li>
+						<li>
+							<a href="/glossary">Глоссарий</a>
+						</li>
+						<li>
+							<a href="/faq">FAQ</a>
+						</li>
+						<li>
+							<a href="/contact">Контакты</a>
+						</li>
+					</ul>
+					<span class="white-line"></span>
+				</div>
+				<div class="clearfix">
+					<div class="col-md-7">
+						<span class="fs-small display-block ptb-20 ff-lat">
+							© 2016 Фото, видео-съемка ограненных камней и ювелирных изделий.
+							<a href="" class="text-underline">Правовая политика</a>
+						</span>
+					</div>
+					<div class="col-md-5 text-right">
+						<span class="fs-small display-block ptb-20 ff-lat">Создание и поддержка - "Белый кот"</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<div class="chut-btn">
+		Чат
+		<br>24/7</div>
+
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="plugins/jui/js/ui-slider.js"></script>
+
+	<script src="js/bootstrap.js"></script>
+	<script src="plugins/sliderjs/jquery.slides.js"></script>
+	<script src="plugins/mytabs/vendor/jquery.hashchange.min.js" type="text/javascript"></script>
+	<script src="plugins/mytabs/lib/jquery.easytabs.js" type="text/javascript"></script>
+	<script src="plugins/slick-menu/dist/jquery.slicknav.js"></script>
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="plugins/formstyler/jquery.formstyler.js"></script>
+	<script src="plugins/datetimepicker/build/jquery.datetimepicker.full.js"></script>
+	 
+	
+	<script src="js/scripts.js"></script>
+	 
+
+</html>
