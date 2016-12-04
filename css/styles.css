@@ -1818,6 +1818,20 @@ section {
 	    line-height: 20px;
 	    color: #006666;
 	}
+	.gem-modal-add .quest:hover:after {
+	    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis dolor commodi, molestias ad natus, voluptate quibusdam vel! Perspiciatis assumenda quas blanditiis, delectus corporis saepe soluta explicabo, possimus quaerat, a voluptatem!";
+	    display: block;
+	    width: 200px;
+	    height: 60px;
+	    overflow: hidden;
+	    position: absolute;
+	    background: #fff;
+	    z-index: 300;
+	    border: 1px solid;
+	    border-radius: 10px;
+	    top: -70px;
+	    right: -20px;
+	}
 	.gem-modal-add img {
 		display: block;
 		margin-top: 15px;
@@ -4251,6 +4265,7 @@ ul.dropdown-inside.tops-ul{
 	.gem-modal-add .category .quest, .gem-modal-add .notes .quest {
 	    top: -16px;
 	    right: 1%;
+	    z-index: 50000;
 	}
 	.gem-modal-add textarea, #gem-weight {
 	    width: 100%;
