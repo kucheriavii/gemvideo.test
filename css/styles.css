@@ -1740,7 +1740,7 @@ section {
 		opacity: .3;
 		display: none;
 	}
-	.gem-modal-add {
+	.gem-modal-add, .jaw-modal-add {
 		width: 76%;
 	    margin: 0 auto;
 	    background: #fff;
@@ -1755,20 +1755,31 @@ section {
 	    display: none;
 	    overflow: hidden;
 	    padding-bottom: 59px;
+	    overflow: auto;
 	}
-	.gem-modal-add form {
+	.jaw-modal-add{
+		max-height: 80%;
+	}
+	.jaw-modal-add .image-box {
+	    width: 180px;
+	    width: auto;
+	    margin: 0;
+	    padding: 4px;
+	}
+	//.jaw-modal-add{display: block;}
+	.gem-modal-add form, .jaw-modal-add form {
 		//overflow: hidden;
 	} 
-	.gem-modal-add h3 {
+	.gem-modal-add h3, .jaw-modal-add h3 {
 		font: 18px "Arial", sans-serif;
 		font-weight: bold;
 		padding-left: 15px;
 		margin-top: 25px;
 	}
-	.gem-modal-add .main-gem-block .gem-top{
+	.gem-modal-add .main-gem-block .gem-top, .jaw-modal-add .main-gem-block .gem-top{
 		margin-top: -1px;
 	}
-	.gem-modal-add .modal-menu {
+	.gem-modal-add .modal-menu, .jaw-modal-add .modal-menu {
 		display: block;
 		border-bottom: 1px solid #999;
 		overflow: hidden;
@@ -1782,7 +1793,7 @@ section {
 	.choose-menu {
 		padding-bottom: 0px;
 	}
-	.gem-modal-add .modal-menu .modal-choose{
+	.gem-modal-add .modal-menu .modal-choose, .jaw-modal-add .modal-menu .modal-choose{
 		display: block;
 		float: left;
 		padding: 13px;
@@ -1792,18 +1803,20 @@ section {
 		display: none !important;
 	}
 
-	.gem-modal-add .n-row {
+	.gem-modal-add .n-row, .jaw-modal-add .n-row {
 		position: relative;
 	}
-	.gem-modal-add .polish-gem-block .n-row {
+	.gem-modal-add .polish-gem-block .n-row, .jaw-modal-add .polish-gem-block .n-row {
 		height: auto;
 	}
-	.gem-modal-add .polish-gem-block .n-row span.bor{
+	.gem-modal-add .polish-gem-block .n-row span.bor, .jaw-modal-add .polish-gem-block .n-row span.bor {
 		height: auto;
 		line-height: auto;
 	}
 	.gem-modal-add .category .quest, 
-	.gem-modal-add .notes .quest {
+	.gem-modal-add .notes .quest,
+	.jaw-modal-add .category .quest, 
+	.jaw-modal-add .notes .quest {
 	    content: "?";
 	    position: absolute;
 	    right: 5px;
@@ -1818,7 +1831,11 @@ section {
 	    line-height: 20px;
 	    color: #006666;
 	}
-	.gem-modal-add .quest:hover:after {
+	.jaw-modal-add .category .quest, 
+	.jaw-modal-add .notes .quest {
+		right: 29%;
+	}
+	.gem-modal-add .quest:hover:after, .jaw-modal-add .quest:hover:after {
 	    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis dolor commodi, molestias ad natus, voluptate quibusdam vel! Perspiciatis assumenda quas blanditiis, delectus corporis saepe soluta explicabo, possimus quaerat, a voluptatem!";
 	    display: block;
 	    width: 200px;
@@ -1832,7 +1849,7 @@ section {
 	    top: -70px;
 	    right: -20px;
 	}
-	.gem-modal-add img {
+	.gem-modal-add img, .jaw-modal-add img {
 		display: block;
 		margin-top: 15px;
 		width: 150px;
@@ -1841,21 +1858,26 @@ section {
 	.image-box{
 		width: 180px;
 	}
-	.gem-modal-add span {
+	.gem-modal-add span, .jaw-modal-add span {
 		display: block;
 		height: 26px;
 		//line-height: 26px;
 	}
-	.gem-modal-add .left-param, .gem-modal-add .right-param{
+	.gem-modal-add .left-param, .gem-modal-add .right-param,
+	.jaw-modal-add .left-param, .jaw-modal-add .right-param{
 		padding: 5px 5px;
 	}
-	.gem-modal-add .left-param div, .gem-modal-add .right-param div {
+	.gem-modal-add .left-param div, .gem-modal-add .right-param div,
+	.jaw-modal-add .left-param div, .jaw-modal-add .right-param div {
 	    height: 26px;
 	    margin: 11px 0;
 	}
 	.gem-modal-add select,
 	.gem-modal-add input,
-	.gem-modal-add textarea{
+	.gem-modal-add textarea,
+	.jaw-modal-add select,
+	.jaw-modal-add input,
+	.jaw-modal-add textarea{
 		display: block;
 		width: 50%;
 		font-size: 13px;
@@ -1863,10 +1885,15 @@ section {
 		border: 1px solid #999;
 	}
 	.gem-modal-add select,
-	.gem-modal-add input {
+	.gem-modal-add input,
+	.jaw-modal-add select,
+	.jaw-modal-add input {
 		height: 26px;
 	}
 	#gem-price{
+		width: 40%;
+	}
+	#jaw-price{
 		width: 40%;
 	}
 	.gem-price:after {
@@ -1876,6 +1903,15 @@ section {
 	    float: none;
 	    position: absolute;
 	    right: 18%;
+	    top: 4px;
+	}
+	.jaw-price:after {
+	    content: "$";
+	    display: block;
+	    width: 5%;
+	    float: none;
+	    position: absolute;
+	    right: 37%;
 	    top: 4px;
 	}
 	#gem-weight {
@@ -1913,7 +1949,13 @@ section {
 	#polish-pavilion-depth, #polish-pavilion-depth-mm, #polish-gem-girdle, #polish-gem-girdle-mm, #polish-gem-culet, #polish-gem-culet-mm{
 		width: 18%;
 	}
-	.gem-modal-add .more-info a{
+	#jaw-polish-gem-width, #jaw-polish-gem-height, #jaw-polish-gem-depth, #jaw-polish-gem-depth-mm, #jaw-polish-gem-spread, #jaw-polish-gem-spread-mm,
+	#jaw-polish-gem-table, #jaw-polish-gem-table-mm, #jaw-polish-crown-angle, #jaw-gem-crown-height, #jaw-gem-crown-height-mm, #jaw-polish-pavilion-angle, #jaw-polish-pavilion-angle-mm,
+	#jaw-polish-pavilion-depth, #jaw-polish-pavilion-depth-mm, #jaw-polish-gem-girdle, #jaw-polish-gem-girdle-mm, #jaw-polish-gem-culet, #jaw-polish-gem-culet-mm{
+		width: 18%;
+	}
+	.gem-modal-add .more-info a,
+	.jaw-modal-add .more-info a{
 		font: 12px "Arial Regular", "Arial", sans-serif;
 		color: rgb(0, 102, 102);
 		text-decoration: none;
@@ -1929,7 +1971,7 @@ section {
 		color: #006666;
 		font-weight: bold;
 	}
-	.gem-modal-add .gem-cancel, .gem-modal-add .gem-ok {
+	.gem-modal-add .gem-cancel, .gem-modal-add .gem-ok, .jaw-modal-add .gem-cancel, .jaw-modal-add .gem-ok {
 	    color: #006666;
 	    display: block;
 	    background: #fff;
@@ -1940,7 +1982,7 @@ section {
 	    font: 13px "Arial Bold", "Arial", sans-serif;
 	    line-height: 1px;
 	}
-	.gem-modal-add .more-info {
+	.gem-modal-add .more-info, .jaw-modal-add .more-info  {
 		margin-top: 15px;
 	}
 	.gem-cancel {
@@ -1955,7 +1997,10 @@ section {
 	}
 	.gem-modal-add .grade-gem-block div, .gem-modal-add .grade-gem-block div,
 	.gem-modal-add .polish-gem-block div, .gem-modal-add .polish-gem-block div,
-	.gem-modal-add .real-gem-block div, .gem-modal-add .real-gem-block div {
+	.gem-modal-add .real-gem-block div, .gem-modal-add .real-gem-block div,
+	.jaw-modal-add .grade-gem-block div, .jaw-modal-add .grade-gem-block div,
+	.jaw-modal-add .polish-gem-block div, .jaw-modal-add .polish-gem-block div,
+	.jaw-modal-add .real-gem-block div, .jaw-modal-add .real-gem-block div {
 	    height: 34px;
 	    margin: -1px 0;
 	    border: 1px solid #ccc;
@@ -1963,7 +2008,10 @@ section {
 	}
 	.gem-modal-add .grade-gem-block span,
 	.gem-modal-add .polish-gem-block span.bor,
-	.gem-modal-add .real-gem-block span {
+	.gem-modal-add .real-gem-block span,
+	.jaw-modal-add .grade-gem-block span,
+	.jaw-modal-add .polish-gem-block span.bor,
+	.jaw-modal-add .real-gem-block span {
 	    display: block;
 	    height: 34px;
 	    line-height: 34px;
@@ -1973,16 +2021,22 @@ section {
 	}
 	.gem-modal-add .grade-gem-block select, .gem-modal-add .grade-gem-block input,
 	.gem-modal-add .polish-gem-block select, .gem-modal-add .polish-gem-block input,
-	.gem-modal-add .real-gem-block select, .gem-modal-add .real-gem-block input {
+	.jaw-modal-add .real-gem-block select, .gem-modal-add .real-gem-block input,
+	.jaw-modal-add .grade-gem-block select, .jaw-modal-add .grade-gem-block input,
+	.jaw-modal-add .polish-gem-block select, .jaw-modal-add .polish-gem-block input,
+	.jaw-modal-add .real-gem-block select, .jaw-modal-add .real-gem-block input {
 	    height: 26px;
 	    margin-top: 3px;
 	    display: inline-block;
 	    margin-left: 5px;
 	}
+	.jaw-modal-add .grade-gem-block input, .jaw-modal-add .polish-gem-block select, .jaw-modal-add .polish-gem-block input, .jaw-modal-add .real-gem-block select, .jaw-modal-add .real-gem-block input{
+		width: 53%;
+	}
 	.right-grade {
 		width: 36%;
 	}
-	.gem-modal-add .grade-gem-block select{
+	.gem-modal-add .grade-gem-block select, .jaw-modal-add .grade-gem-block select{
 		width: 53%;
 	}
 	.left-param{
@@ -1994,7 +2048,7 @@ section {
 	    position: absolute;
 	    bottom: 10px;
 	}
-	.gem-modal-add .right-polish .right-polish-pic, .right-polish .right-polish-pic .polish-gem-schema{
+	.gem-modal-add .right-polish .right-polish-pic, .jaw-modal-add .right-polish .right-polish-pic, .right-polish .right-polish-pic .polish-gem-schema{
 		height: auto;
 		border: none;
 		padding-bottom: 30px;
@@ -2008,19 +2062,25 @@ section {
 	#real-gem-sert, #real-gem-date{
 		width: 25%;
 	}
-	.gem-modal-add .real-sert span.check-gem{
+	#sert-jaw-date, #sert-jaw-date, #real-jaw-sert, #jawellery-man, #sert-jaw-price {
+    	width: 39%;
+	}
+	.gem-modal-add .real-sert span.check-gem, .jaw-modal-add .real-sert span.check-gem{
 		display: block;
 		position: absolute;
 		right: 0;
 	}
-	.gem-modal-add .real-sert span.check-gem {
+	.jaw-modal-add .grade-gem-block div, .jaw-modal-add .grade-gem-block div{
+		border: none;
+	}
+	.gem-modal-add .real-sert span.check-gem, .jaw-modal-add .real-sert span.check-gem  {
 	    display: block;
 	    position: absolute;
 	    right: 8%;
 	    top: 0;
 	    border: none;
 	}
-	.gem-modal-add .real-sert span.check-gem a{
+	.gem-modal-add .real-sert span.check-gem a, .jaw-modal-add .real-sert span.check-gem a{
 		color: #333;
 		text-decoration: underline;
 	}
@@ -2041,13 +2101,77 @@ section {
 	    background-size: 60% 100%;
 	    border: none;
 	}
-	.gem-modal-add .real-gem-block select{
+	.jaw-modal-add .date-tool{
+		left: 76%;
+	}
+	.gem-modal-add .real-gem-block select, .jaw-modal-add .real-gem-block select{
 		background: #006666;
 		color: #fff;
 	}
 	.selected{
 		background: #ccc;
 	}
+	.jaw-modal-add .left-param .more-gems{
+		height: auto;
+   		border: none;
+	}
+	.jaw-modal-add .left-param .more-gems h3{
+		font: 13px "Arial Bold", "Arial", sans-serif;
+		color: #666;
+		text-transform: uppercase;
+		padding-left: 0;
+
+	}
+	.jaw-modal-add .left-param .more-gems textarea{
+		width: 100%;
+		margin-bottom: 150px;
+	}
+	#money{
+		width: 60px;
+		background: #fff;
+		color: #333;
+	}
+	#calibr-length,
+	#calibr-width,
+	#calibr-height{
+		width: 18%;
+	}
+	p.calibr {
+	    margin: 0 0 10px;
+	    width: 18%;
+	    float: left;
+	    text-indent: 22px;
+	    margin-bottom: -1px;
+	}
+	.mg-color, .img-chs{
+		min-height: 200px;
+	}
+	.img-chs p{
+		width: 50px;
+		text-align: center;
+		padding: 5px 0 0 0;
+		margin-bottom: -1px;
+	}
+	.mg-color img{
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin-top: 0;
+	}
+	.second-gems-block{
+		margin-left: 15px;
+	}
+	.main-gems-block .mg-fb, .main-gems-block .n-row {
+		width: 100%;
+		border: none !important;
+	}
+	.jaw-modal-add .main-gems-block{
+		min-height: auto;
+	}
+	.mg-fb button{
+		float: right;
+	}
+
 	//#grade-gem-polish, #grade-gem-symethry, #grade-gem-UF, #grade-gem-rundist, #grade-gem-callet{
 	//	width: 30%;
 	//}
@@ -4244,14 +4368,16 @@ ul.dropdown-inside.tops-ul{
 	/*****************************************************************************/
 	/************************KUCHERIAVII*************************************/
 	/*****************************************************************************/
-	.gem-modal-add {
+	.gem-modal-add, .jaw-modal-add {
 	    padding: 5px 15px;
 	    padding-bottom: 50px;
 	}
-	.gem-modal-add span, .gem-modal-add .gem-top p{
+	.gem-modal-add span, .gem-modal-add .gem-top p,
+	.jaw-modal-add span, .jaw-modal-add .gem-top p{
 		text-align: center;
 	}
-	.gem-modal-add select, .gem-modal-add input, .gem-modal-add textarea, #gem-price, #gem-weight{
+	.gem-modal-add select, .gem-modal-add input, .gem-modal-add textarea, #gem-price, #gem-weight,
+	.jaw-modal-add select, .gem-modal-add input, .jaw-modal-add textarea, #jaw-price, #gem-weight{
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -4261,13 +4387,28 @@ ul.dropdown-inside.tops-ul{
 	.image-box img{
 		display: block;
 		margin: 0 auto;
+		margin-bottom: 15px;
 	}
-	.gem-modal-add .category .quest, .gem-modal-add .notes .quest {
+	.gem-modal-add .category .quest, .gem-modal-add .notes .quest,
+	.jaw-modal-add .category .quest, .jaw-modal-add .notes .quest {
 	    top: -16px;
 	    right: 1%;
 	    z-index: 50000;
 	}
-	.gem-modal-add textarea, #gem-weight {
+	.jaw-modal-add .main-gems-block input,
+	.jaw-modal-add .main-gems-block select{
+		width: 99% !important;
+	}
+	p.calibr{
+		width: 33%;
+		text-align: center;
+	}
+	#calibr-length, #calibr-width, #calibr-height{
+		width: 31% !important;
+		display: block;
+	}
+	.gem-modal-add textarea, #gem-weight,
+	.jaw-modal-add textarea, #gem-weight {
 	    width: 100%;
 	    margin: 0 auto;
 	    //left: 5%;
@@ -4291,10 +4432,12 @@ ul.dropdown-inside.tops-ul{
 	    top: 30px;
 	    display: none;
 	}
-	.gem-modal-add .gem-cancel, .gem-modal-add .gem-ok {
+	.gem-modal-add .gem-cancel, .gem-modal-add .gem-ok,
+	.jaw-modal-add .gem-cancel, .jaw-modal-add .gem-ok {
 	    bottom: -28px;
 	}
-	.gem-modal-add .modal-menu {
+	.gem-modal-add .modal-menu,
+	.jaw-modal-add .modal-menu  {
 	    display: block;
 	    border-bottom: 1px solid #999;
 	    overflow: hidden;
@@ -4303,10 +4446,12 @@ ul.dropdown-inside.tops-ul{
 	    margin-bottom: 15px;
 	    display: block !important;
 	}
-	.gem-modal-add .more-info a{
+	.gem-modal-add .more-info a,
+	.jaw-modal-add .more-info a{
 		display: none;
 	}
-	.gem-modal-add .grade-gem-block select {
+	.gem-modal-add .grade-gem-block select,
+	.jaw-modal-add .grade-gem-block select {
 	    width: 99%;
 	}
 	.right-grade {
@@ -4315,10 +4460,12 @@ ul.dropdown-inside.tops-ul{
 	.buttons {
 		margin-top: 17px;
 	}
-	.gem-modal-add .grade-gem-block input{
+	.gem-modal-add .grade-gem-block input,
+	.jaw-modal-add .grade-gem-block input{
 		width: 99%;
 	}
-	.gem-modal-add .real-gem-block select{
+	.gem-modal-add .real-gem-block select,
+	.jaw-modal-add .real-gem-block select{
 		width: 80%;
 	    margin: 0 auto;
 	    display: block;
@@ -4327,6 +4474,23 @@ ul.dropdown-inside.tops-ul{
 	    width: 80%;
 	    display: block;
 	    margin: 0 auto;
+	}
+	#sert-jaw-date, #sert-jaw-date, #real-jaw-sert, #jawellery-man {
+    	width: 99%;
+	}
+	#money {
+	    width: 60px;
+	    float: right;
+	    right: 15px;
+	    display: block;
+	    position: relative;
+	    top: 3px;
+	}
+	#sert-jaw-price{
+		width: 80%;
+	}
+	.jaw-modal-add .date-tool{
+		display: none;
 	}
 	/****************************************************/
 	.lab-edit .object-edit-foto{
@@ -4481,13 +4645,14 @@ ul.dropdown-inside.tops-ul{
 		padding: 10px;
 	}
 	/*********************kucheriavii********************************/
-	.gem-modal-add {
+	.gem-modal-add, .jaw-modal-add {
 	    overflow: scroll;
 	    height: 100%;
 	    width: 100%;
 	    left: 0;
 	}
-	.gem-modal-add .left-param div, .gem-modal-add .right-param div{
+	.gem-modal-add .left-param div, .gem-modal-add .right-param div,
+	.jaw-modal-add .left-param div, .jaw-modal-add .right-param div{
 		height: 70px;
 	}
 }
@@ -4533,14 +4698,16 @@ ul.dropdown-inside.tops-ul{
 	/*****************************************************************************/
 	/************************KUCHERIAVII*************************************/
 	/*****************************************************************************/
-	.gem-modal-add {
+	.gem-modal-add, .jaw-modal-add {
 	    padding: 5px 15px;
 	    padding-bottom: 50px;
 	}
-	.gem-modal-add span, .gem-modal-add .gem-top p{
+	.gem-modal-add span, .gem-modal-add .gem-top p,
+	.jaw-modal-add span, .jaw-modal-add .gem-top p{
 		text-align: center;
 	}
-	.gem-modal-add select, .gem-modal-add input, .gem-modal-add textarea, #gem-price, #gem-weight{
+	.gem-modal-add select, .gem-modal-add input, .gem-modal-add textarea, #gem-price, #gem-weight,
+	.jaw-modal-add select, .jaw-modal-add input, .jaw-modal-add textarea, #gem-price, #gem-weight{
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -4550,12 +4717,15 @@ ul.dropdown-inside.tops-ul{
 	.image-box img{
 		display: block;
 		margin: 0 auto;
+		margin-bottom: 15px;
 	}
-	.gem-modal-add .category .quest, .gem-modal-add .notes .quest {
+	.gem-modal-add .category .quest, .gem-modal-add .notes .quest,
+	.jaw-modal-add .category .quest, .jaw-modal-add .notes .quest {
 	    top: -16px;
 	    right: 1%;
 	}
-	.gem-modal-add textarea, #gem-weight {
+	.gem-modal-add textarea, #gem-weight,
+	.jaw-modal-add textarea, #gem-weight {
 	    width: 100%;
 	    margin: 0 auto;
 	    //left: 5%;
@@ -4584,17 +4754,28 @@ ul.dropdown-inside.tops-ul{
 	    margin: 0 auto;
 	    display: block;
 	}
-	.gem-modal-add .grade-gem-block select{
+	.gem-modal-add .grade-gem-block select,
+	.jaw-modal-add .grade-gem-block select{
 		width: 98%;
 	}
-	.gem-modal-add .grade-gem-block input {
+	.gem-modal-add .grade-gem-block input,
+	.jaw-modal-add .grade-gem-block input {
 	    width: 98%;
 	}
 	#real-sert{
 		height: 95%;
 	}
-	.gem-modal-add .real-sert span.check-gem{
+	.gem-modal-add .real-sert span.check-gem,
+	.jaw-modal-add .real-sert span.check-gem{
 		position: static;
+	}
+	p.calibr{
+		width: 29%;
+	}
+	#calibr-length, #calibr-width, #calibr-height{
+		width: 29% !important;
+		display: block;
+		float: left;
 	}
 }
 @media only screen and (max-width: 767px){
@@ -5145,7 +5326,8 @@ ul.dropdown-inside.tops-ul{
 	/********************************************************
 	kucheriavii
 	************************************************************/
-	.gem-modal-add .modal-menu .modal-choose {
+	.gem-modal-add .modal-menu .modal-choose,
+	.jaw-modal-add .modal-menu .modal-choose {
 	    display: block;
 	    float: left;
 	    padding: 10px;

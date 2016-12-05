@@ -1,14 +1,21 @@
 $( document ).ready(function() {
   $(".add-gem").click(function(event) {
+    event.preventDefault();
+    $(".gem-light-box").css('display','block');
+    $(".gem-modal-add").css('display','block');
+  });
+  
+  $(".add-jaw").click(function(event) {
   	event.preventDefault();
   	$(".gem-light-box").css('display','block');
-  	$(".gem-modal-add").css('display','block');
+  	$(".jaw-modal-add").css('display','block');
   });
   
 
   $(".close-modal-gem").click(function(event) {
   	$(".gem-light-box").css('display','none');
-  	$(".gem-modal-add").css('display','none');
+    $(".gem-modal-add").css('display','none');
+  	$(".jaw-modal-add").css('display','none');
   });
 
   $(".show-more-options").click(function(event) {
